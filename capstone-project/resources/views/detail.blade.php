@@ -15,14 +15,14 @@
         <p class="text-gray-500 text-sm mb-6">{{ $resep->description }}</p>
 
         <div class="mb-6">
-            <h3 class="text-xl font-bold text-gray-800 mb-2">🌱 Bahan-bahan:</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Bahan-bahan:</h3>
             <p class="text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100 whitespace-pre-line">
                 {{ is_array(json_decode($resep->ingredients)) ? implode("\n", json_decode($resep->ingredients)) : $resep->ingredients }}
             </p>
         </div>
 
         <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">🍳 Langkah Memasak:</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Langkah Memasak:</h3>
             <p class="text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100 whitespace-pre-line">
                 {{ is_array(json_decode($resep->steps)) ? implode("\n", json_decode($resep->steps)) : $resep->steps }}
             </p>
