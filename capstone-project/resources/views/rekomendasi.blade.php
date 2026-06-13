@@ -17,7 +17,7 @@
             </div>
             
             <div class="flex items-center gap-2 shrink-0">
-                <a href="{{ route('landing') }}" class="inline-block bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-4 rounded-xl border border-gray-300 shadow-sm transition duration-200 text-sm">
+                <a href="{{ route('index') }}" class="inline-block bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-4 rounded-xl border border-gray-300 shadow-sm transition duration-200 text-sm">
                     🏠 Beranda
                 </a>
 

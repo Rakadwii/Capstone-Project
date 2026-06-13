@@ -1,0 +1,923 @@
+/* =====================================================
+   ZERO WASTE KITCHEN — landing.css (rewrite)
+   Mengganti position:absolute Figma-export ke flexbox
+   Semua class name dipertahankan agar HTML tidak diubah
+   ===================================================== */
+
+/* ── ROOT WRAPPER ── */
+.landing-page {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ══════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════ */
+.landing-page .frame-7 {
+  width: 100%;
+  height: 84px;
+  background-color: var(--neutralsilver);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.landing-page .group {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Logo text in navbar */
+.landing-page .group-2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.landing-page .text-wrapper-30 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #0b2706;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-31 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #0c2706;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-32 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #0c2706;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.landing-page .gemini-generated {
+  width: 40px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Nav links */
+.landing-page .heading-name {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.landing-page .label-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.landing-page .label-2 {
+  font-family: var(--body-medium-body-2-font-family);
+  font-weight: var(--body-medium-body-2-font-weight);
+  color: var(--brandprimary);
+  font-size: var(--body-medium-body-2-font-size);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.landing-page .label-3 {
+  font-family: var(--body-regular-body-2-font-family);
+  font-weight: var(--body-regular-body-2-font-weight);
+  color: var(--text-gray-900);
+  font-size: var(--body-regular-body-2-font-size);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.landing-page .label-3:hover {
+  color: var(--brandprimary);
+}
+
+/* Auth buttons */
+.landing-page .login {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.landing-page .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1.5px solid var(--brandprimary);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.landing-page .button-2:hover {
+  background-color: var(--tintt-5);
+}
+
+.landing-page .text-wrapper-28 {
+  font-family: var(--label-medium-label-font-family);
+  font-weight: var(--label-medium-label-font-weight);
+  color: var(--brandprimary);
+  font-size: var(--label-medium-label-font-size);
+  white-space: nowrap;
+}
+
+.landing-page .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  background-color: var(--brandprimary);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.landing-page .button-3:hover {
+  background-color: #3d9140;
+}
+
+.landing-page .text-wrapper-29 {
+  font-family: var(--label-medium-label-font-family);
+  font-weight: var(--label-medium-label-font-weight);
+  color: var(--default-white);
+  font-size: var(--label-medium-label-font-size);
+  white-space: nowrap;
+}
+
+/* ══════════════════════════════════════════
+   HERO SECTION  (.home > .hero-section)
+══════════════════════════════════════════ */
+.landing-page .home {
+  width: 100%;
+}
+
+.landing-page .hero-section {
+  width: 100%;
+  min-height: 520px;
+  background-color: #f5f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 144px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page .frame {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+  flex: 1 1 400px;
+}
+
+.landing-page .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.landing-page .aacfb-f-cd {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.landing-page .zero-waste-kitchen {
+  font-family: var(--heading-headline-1-font-family);
+  font-weight: var(--heading-headline-1-font-weight);
+  font-size: var(--heading-headline-1-font-size);
+  line-height: var(--heading-headline-1-line-height);
+  color: transparent;
+}
+
+.landing-page .text-wrapper {
+  color: #4d4d4d;
+  font-family: var(--heading-headline-1-font-family);
+  font-weight: var(--heading-headline-1-font-weight);
+  font-size: var(--heading-headline-1-font-size);
+  line-height: var(--heading-headline-1-line-height);
+}
+
+.landing-page .span {
+  color: #4caf4f;
+  font-family: var(--heading-headline-1-font-family);
+  font-weight: var(--heading-headline-1-font-weight);
+  font-size: var(--heading-headline-1-font-size);
+  line-height: var(--heading-headline-1-line-height);
+}
+
+.landing-page .div {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--neutralgrey);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.landing-page .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background-color: var(--brandprimary);
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.landing-page .button:hover {
+  background-color: #3d9140;
+}
+
+.landing-page .label {
+  color: var(--neutralwhite);
+  font-family: var(--body-medium-body-2-font-family);
+  font-weight: var(--body-medium-body-2-font-weight);
+  font-size: var(--body-medium-body-2-font-size);
+  white-space: nowrap;
+}
+
+/* ══════════════════════════════════════════
+   ABOUT SECTION  (.body)
+══════════════════════════════════════════ */
+.landing-page .body {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page .unlock {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 64px;
+  box-sizing: border-box;
+}
+
+/* About layout: text kanan, gambar kiri */
+.landing-page .body .unlock {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.landing-page .frame-wrapper {
+  flex: 1 1 400px;
+}
+
+.landing-page .frame-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.landing-page .text-wrapper-2 {
+  font-family: var(--heading-headline-2-font-family);
+  font-weight: var(--heading-headline-2-font-weight);
+  color: #4d4d4d;
+  font-size: var(--heading-headline-2-font-size);
+  line-height: var(--heading-headline-2-line-height);
+}
+
+.landing-page .when-joining-the {
+  color: var(--neutralgrey);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.landing-page .element {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+/* ══════════════════════════════════════════
+   FEATURE SECTION  (.body-2)
+══════════════════════════════════════════ */
+.landing-page .body-2 {
+  width: 100%;
+  background-color: #f5f7fa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page .body-2 .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.landing-page .apa-saja-fiturnya {
+  font-family: var(--heading-headline-2-font-family);
+  font-weight: var(--heading-headline-2-font-weight);
+  font-size: var(--heading-headline-2-font-size);
+  line-height: var(--heading-headline-2-line-height);
+  color: transparent;
+  text-align: center;
+}
+
+.landing-page .text-wrapper-3 {
+  color: #000000;
+  font-family: var(--heading-headline-2-font-family);
+  font-weight: var(--heading-headline-2-font-weight);
+  font-size: var(--heading-headline-2-font-size);
+}
+
+.landing-page .text-wrapper-4 {
+  color: #4d4d4d;
+  font-family: var(--heading-headline-2-font-family);
+  font-weight: var(--heading-headline-2-font-weight);
+  font-size: var(--heading-headline-2-font-size);
+}
+
+.landing-page .text-wrapper-5 {
+  color: #4caf4f;
+  font-family: var(--heading-headline-2-font-family);
+  font-weight: var(--heading-headline-2-font-weight);
+  font-size: var(--heading-headline-2-font-size);
+}
+
+.landing-page .when-joining-the-wrapper {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.landing-page .p {
+  font-family: var(--body-regular-body-3-font-family);
+  font-weight: var(--body-regular-body-3-font-weight);
+  color: var(--colors-grays-black);
+  font-size: var(--body-regular-body-3-font-size);
+  line-height: var(--body-regular-body-3-line-height);
+  text-align: center;
+}
+
+/* Feature cards grid */
+.landing-page .body-2 .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-page .feature-item {
+  display: none; /* dikendalikan dari HTML via class */
+}
+
+/* Grid 2x2 untuk 4 feature item */
+.landing-page .features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 80px;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Tiap feature item di HTML pakai div, kita style lewat children */
+.landing-page .mdi-basket-fill,
+.landing-page .fluent-brain-sparkle,
+.landing-page .material-symbols,
+.landing-page .iconamoon-history {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.landing-page .text-wrapper-6,
+.landing-page .text-wrapper-7,
+.landing-page .text-wrapper-8,
+.landing-page .text-wrapper-9 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.landing-page .div-wrapper,
+.landing-page .frame-3,
+.landing-page .frame-4,
+.landing-page .frame-5 {
+  max-width: 360px;
+}
+
+.landing-page .when-joining-the-2,
+.landing-page .when-joining-the-3 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-grays-black);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.landing-page .beea-ba-e {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 32px;
+}
+
+/* ── Override: body-2 .unlock layout pakai flex column tapi feature items grid ── */
+.landing-page .body-2 .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* Wrapper untuk 4 feature item */
+.landing-page .feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ══════════════════════════════════════════
+   BENEFITS SECTION  (.unlock-wrapper)
+══════════════════════════════════════════ */
+.landing-page .unlock-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--colors-backgrounds-primary);
+}
+
+.landing-page .unlock-wrapper .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.landing-page .text-wrapper-10 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-grays-black);
+  font-size: 36px;
+  text-align: center;
+  line-height: 44px;
+}
+
+.landing-page .when-joining-the-4 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colors-grays-black);
+  font-size: 15px;
+  text-align: center;
+  line-height: 24px;
+  max-width: 600px;
+}
+
+/* Benefits 3-card grid */
+.landing-page .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.landing-page .benefit-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
+  padding: 40px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  min-height: 280px;
+}
+
+/* Icon placeholder (rectangle-7/8/9) */
+.landing-page .rectangle-7,
+.landing-page .rectangle-8,
+.landing-page .rectangle-9 {
+  width: 59px;
+  height: 53px;
+  background-color: var(--tintt-5);
+  border-radius: 18px 5px 10px 5px;
+  transform: rotate(-180deg);
+  flex-shrink: 0;
+}
+
+/* Benefit icons */
+.landing-page .ri-lightbulb-ai-line,
+.landing-page .fluent-bin-recycle {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.landing-page .text-wrapper-14,
+.landing-page .text-wrapper-15,
+.landing-page .inspirasi-masak {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #4d4d4d;
+  font-size: 18px;
+  text-align: center;
+  line-height: normal;
+}
+
+.landing-page .text-wrapper-11,
+.landing-page .text-wrapper-12,
+.landing-page .text-wrapper-13 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #263238;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* Unused Figma rectangles — sembunyikan */
+.landing-page .rectangle,
+.landing-page .rectangle-2,
+.landing-page .rectangle-3,
+.landing-page .rectangle-4,
+.landing-page .rectangle-5,
+.landing-page .rectangle-6 {
+  display: none;
+}
+
+/* ══════════════════════════════════════════
+   OUR TEAMS  (.body-3)
+══════════════════════════════════════════ */
+.landing-page .body-3 {
+  width: 100%;
+  background-color: #f5f7fa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-page .body-3 .unlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.landing-page .text-wrapper-16 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colors-grays-black);
+  font-size: 36px;
+  text-align: center;
+  line-height: 44px;
+}
+
+/* Cards row */
+.landing-page .catalogue-car {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.landing-page .catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.landing-page .catalog,
+.landing-page .catalog-2,
+.landing-page .catalog-3 {
+  position: relative;
+  width: 220px;
+  min-height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px 16px;
+  gap: 8px;
+}
+
+/* Team member photo */
+.landing-page .catalog img,
+.landing-page .catalog-2 img,
+.landing-page .catalog-3 img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.landing-page .text-wrapper-17,
+.landing-page .text-wrapper-19 {
+  font-family: var(--bold-type-20-font-family);
+  font-weight: var(--bold-type-20-font-weight);
+  color: var(--secondary-500);
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-18,
+.landing-page .text-wrapper-20,
+.landing-page .text-wrapper-21,
+.landing-page .text-wrapper-22 {
+  font-family: "Plus Jakarta Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--secondary-500);
+  font-size: 15px;
+  line-height: normal;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.landing-page .price,
+.landing-page .price-2,
+.landing-page .price-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.landing-page .car-name,
+.landing-page .car-name-2,
+.landing-page .car-name-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Foto-foto member — override absolute dari Figma */
+.landing-page .vuesax-bold-gallery,
+.landing-page .sakera,
+.landing-page .mahogany,
+.landing-page .couple-2 {
+  position: static !important;
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: contain !important;
+}
+
+/* Sembunyikan body-4 karena sudah digabung ke body-3 */
+.landing-page .body-4 {
+  display: none;
+}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+.landing-page .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Strip hijau tipis atas footer */
+.landing-page .frame-6 {
+  width: 100%;
+  height: 8px;
+  background-color: var(--brandprimary);
+}
+
+.landing-page .footer-big {
+  width: 100%;
+  background-color: var(--neutralblack);
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 64px 120px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page .company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 0 0 auto;
+}
+
+.landing-page .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-page .logo img {
+  width: 40px;
+  height: auto;
+}
+
+.landing-page .copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.landing-page .copyright-2 {
+  font-family: var(--body-regular-body-3-font-family);
+  font-weight: var(--body-regular-body-3-font-weight);
+  color: var(--neutralsilver);
+  font-size: var(--body-regular-body-3-font-size);
+  line-height: var(--body-regular-body-3-line-height);
+}
+
+.landing-page .text-wrapper-26 {
+  font-family: var(--body-regular-body-3-font-family);
+  font-weight: var(--body-regular-body-3-font-weight);
+  color: var(--neutralsilver);
+  font-size: var(--body-regular-body-3-font-size);
+  line-height: var(--body-regular-body-3-line-height);
+}
+
+.landing-page .links {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.landing-page .col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.landing-page .company {
+  font-family: var(--heading-headline-4-font-family);
+  font-weight: var(--heading-headline-4-font-weight);
+  color: var(--neutralwhite);
+  font-size: var(--heading-headline-4-font-size);
+  line-height: var(--heading-headline-4-line-height);
+}
+
+.landing-page .list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.landing-page .about-us,
+.landing-page .text-wrapper-27 {
+  font-family: var(--body-regular-body-3-font-family);
+  font-weight: var(--body-regular-body-3-font-weight);
+  color: var(--neutralsilver);
+  font-size: var(--body-regular-body-3-font-size);
+  line-height: var(--body-regular-body-3-line-height);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.landing-page .about-us:hover,
+.landing-page .text-wrapper-27:hover {
+  color: var(--brandprimary);
+}
+
+/* Social icons wrapper */
+.landing-page .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.landing-page .social-icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.landing-page .social-icons,
+.landing-page .social-icons-2,
+.landing-page .social-icons-3,
+.landing-page .social-icons-4 {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  /* override Figma absolute */
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+.landing-page .text-wrapper-33 {
+  font-family: var(--heading-headline-4-font-family);
+  font-weight: var(--heading-headline-4-font-weight);
+  color: var(--neutralwhite);
+  font-size: var(--heading-headline-4-font-size);
+  line-height: var(--heading-headline-4-line-height);
+  /* override Figma absolute */
+  position: static !important;
+}
+
+/* Footer brand name bar */
+.landing-page .footer-brand {
+  width: 100%;
+  background-color: var(--neutralblack);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.landing-page .text-wrapper-23 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  white-space: nowrap;
+  /* override Figma absolute */
+  position: static !important;
+}
+
+.landing-page .text-wrapper-24 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  white-space: nowrap;
+  /* override Figma absolute */
+  position: static !important;
+}
+
+.landing-page .text-wrapper-25 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+  white-space: nowrap;
+  /* override Figma absolute */
+  position: static !important;
+}
+
+/* Feature section: grid kiri + gambar kanan */
+.landing-page .feature-content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.landing-page .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 48px;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.landing-page .feature-image {
+    flex: 0 0 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page .beea-ba-e {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+}

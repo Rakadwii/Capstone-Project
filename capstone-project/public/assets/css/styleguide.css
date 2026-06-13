@@ -1,0 +1,89 @@
+:root {
+  --neutralgrey: rgba(113, 113, 113, 1);
+  --neutralwhite: rgba(255, 255, 255, 1);
+  --secondary-500: rgba(26, 32, 44, 1);
+  --neutralsilver: rgba(245, 247, 250, 1);
+  --text-gray-900: rgba(24, 25, 31, 1);
+  --brandprimary: rgba(76, 175, 79, 1);
+  --default-white: rgba(255, 255, 255, 1);
+  --tintt-5: rgba(232, 245, 233, 1);
+  --neutralblack: rgba(38, 50, 56, 1);
+  --heading-headline-1-font-family: "Inter", Helvetica;
+  --heading-headline-1-font-weight: 600;
+  --heading-headline-1-font-size: 64px;
+  --heading-headline-1-letter-spacing: 0px;
+  --heading-headline-1-line-height: 76px;
+  --heading-headline-1-font-style: normal;
+  --body-medium-body-2-font-family: "Inter", Helvetica;
+  --body-medium-body-2-font-weight: 500;
+  --body-medium-body-2-font-size: 16px;
+  --body-medium-body-2-letter-spacing: 0px;
+  --body-medium-body-2-line-height: 24px;
+  --body-medium-body-2-font-style: normal;
+  --heading-headline-2-font-family: "Inter", Helvetica;
+  --heading-headline-2-font-weight: 600;
+  --heading-headline-2-font-size: 36px;
+  --heading-headline-2-letter-spacing: 0px;
+  --heading-headline-2-line-height: 44px;
+  --heading-headline-2-font-style: normal;
+  --body-regular-body-3-font-family: "Inter", Helvetica;
+  --body-regular-body-3-font-weight: 400;
+  --body-regular-body-3-font-size: 14px;
+  --body-regular-body-3-letter-spacing: 0px;
+  --body-regular-body-3-line-height: 20px;
+  --body-regular-body-3-font-style: normal;
+  --bold-type-20-font-family: "Plus Jakarta Sans", Helvetica;
+  --bold-type-20-font-weight: 700;
+  --bold-type-20-font-size: 20px;
+  --bold-type-20-letter-spacing: -0.6px;
+  --bold-type-20-line-height: 150%;
+  --bold-type-20-font-style: normal;
+  --heading-headline-4-font-family: "Inter", Helvetica;
+  --heading-headline-4-font-weight: 600;
+  --heading-headline-4-font-size: 20px;
+  --heading-headline-4-letter-spacing: 0px;
+  --heading-headline-4-line-height: 28px;
+  --heading-headline-4-font-style: normal;
+  --body-regular-body-2-font-family: "Inter", Helvetica;
+  --body-regular-body-2-font-weight: 400;
+  --body-regular-body-2-font-size: 16px;
+  --body-regular-body-2-letter-spacing: 0px;
+  --body-regular-body-2-line-height: 24px;
+  --body-regular-body-2-font-style: normal;
+  --label-medium-label-font-family: "Inter", Helvetica;
+  --label-medium-label-font-weight: 500;
+  --label-medium-label-font-size: 14px;
+  --label-medium-label-letter-spacing: 0px;
+  --label-medium-label-line-height: 20px;
+  --label-medium-label-font-style: normal;
+  --colors-grays-black: rgba(0, 0, 0, 1);
+  --colors-backgrounds-primary: rgba(255, 255, 255, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-colors-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-colors-mode="light"] {
+  --colors-backgrounds-primary: rgba(255, 255, 255, 1);
+}
+
+[data-colors-mode="dark"] {
+  --colors-backgrounds-primary: rgba(0, 0, 0, 1);
+}
+
+[data-colors-mode="IC-light"] {
+  --colors-backgrounds-primary: rgba(255, 255, 255, 1);
+}
+
+[data-colors-mode="IC-dark"] {
+  --colors-backgrounds-primary: rgba(0, 0, 0, 1);
+}

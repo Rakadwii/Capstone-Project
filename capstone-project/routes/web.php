@@ -9,7 +9,7 @@ use App\Http\Controllers\AuthController;
 // ============================================================
 
 // Halaman Landing Page Utama
-Route::get('/', function () { return view('landing'); })->name('landing');
+Route::get('/', [AuthController::class, 'index'])->name('index');
 
 // Halaman & Proses Pencarian Rekomendasi Resep AI (Menggunakan GET sesuai Form di Blade)
 Route::get('/rekomendasi', [RecipeController::class, 'dapatkanRekomendasi'])->name('rekomendasi.cari');

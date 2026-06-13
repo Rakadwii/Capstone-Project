@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Password;
 
 class AuthController extends Controller
 {
+
+    public function index()
+    {
+        return view('index'); 
+    }
     // 1. Menampilkan Halaman Register
     public function tampilkanRegister()
     {
