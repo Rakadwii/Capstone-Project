@@ -115,7 +115,7 @@ class RecipeController extends Controller
                 ]);
             }
 
-            return back()->with('success', 'Berhasil menambahkan resep ke favorit! 😍');
+            return back()->with('success', 'Berhasil menambahkan resep ke favorit!');
 
         } catch (\Exception $e) {
             return back()->with('error', 'Gagal menyimpan ke favorit: ' . $e->getMessage());

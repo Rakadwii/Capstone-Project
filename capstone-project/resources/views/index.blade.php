@@ -27,7 +27,7 @@
                     <div class="label-wrapper"><a href="#about" class="label-3">About</a></div>
                     <div class="label-wrapper"><a href="#feature" class="label-3">Feature</a></div>
                     <div class="label-wrapper"><a href="#benefits" class="label-3">Benefits</a></div>
-                    <div class="label-wrapper"><a href="#teams" class="label-3">Our Team</a></div>
+                    <div class="label-wrapper"><a href="#teams" class="label-3">Our Teams</a></div>
                 </div>
             </div>
             <div class="login">
