@@ -43,6 +43,8 @@ Route::middleware(['auth'])->group(function () {
     
     // Halaman detail isi bahan dan langkah memasak resep
     Route::get('/resep/{id}', [RecipeController::class, 'showDetail'])->name('resep.detail');
+
+    Route::delete('/favorit/{id}', [RecipeController::class, 'hapusFavorit'])->name('favorit.hapus');
     
     // Halaman histori pencarian user (SUDAH DIPERBAIKI: Mengarah ke Controller)
     Route::get('/histori', [RecipeController::class, 'indexHistori'])->name('histori.index');

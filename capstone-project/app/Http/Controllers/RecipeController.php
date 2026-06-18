@@ -100,7 +100,6 @@ class RecipeController extends Controller
                 ]);
             }
 
-            // Simpan ke tabel resep_favorit milik user
             $sudahAda = DB::table('resep_favorit')
                 ->where('user_id', \Illuminate\Support\Facades\Auth::id())
                 ->where('recipe_id', $recipeId)
@@ -147,6 +146,25 @@ class RecipeController extends Controller
         // Mengirimkan data resep ke file blade baru bernama detail.blade.php
         return view('detail', compact('resep'));
     }
+
+    public function hapusFavorit(Request $request, $id)
+{
+    try {
+        $deleted = DB::table('resep_favorit')
+            ->where('id', $id)
+            ->where('user_id', \Illuminate\Support\Facades\Auth::id())
+            ->delete();
+
+        if (!$deleted) {
+            return back()->with('error', 'Resep favorit tidak ditemukan atau bukan milik Anda.');
+        }
+
+        return back()->with('success', 'Resep berhasil dihapus dari favorit.');
+
+    } catch (\Exception $e) {
+        return back()->with('error', 'Gagal menghapus favorit: ' . $e->getMessage());
+    }
+}
 
 
     public function indexHistori()
